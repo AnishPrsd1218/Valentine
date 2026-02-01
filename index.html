@@ -97,11 +97,8 @@
     const maxX = area.clientWidth - noBtn.offsetWidth;
     const maxY = area.clientHeight - noBtn.offsetHeight;
 
-    const x = Math.random() * maxX;
-    const y = Math.random() * maxY;
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
+    noBtn.style.left = Math.random() * maxX + "px";
+    noBtn.style.top = Math.random() * maxY + "px";
   }
 
   function showLove() {
@@ -131,22 +128,24 @@
       <h1 style="color:#ff4d6d;font-size:46px;">
         I love you now and forever ❤️
       </h1>
-      <p style="font-size:32px;">meri cutuie pie 💖</p>
-      <p style="font-size:18px;">Tap ▶ to play our song 💕</p>
 
+      <p style="font-size:32px;margin-bottom:10px;">
+        meri cutuie pie 💖
+      </p>
+
+      <p style="font-size:18px;margin-bottom:10px;">
+        Tap ▶ to play our song 💕
+      </p>
+
+      <!-- ✅ STABLE SPOTIFY EMBED -->
       <iframe
-        style="border-radius:12px;margin:15px 0"
-        src="https://open.spotify.com/embed/track/4iYRa2btalAzPZoF7w3ZcU"
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp"
         width="100%"
         height="152"
         frameborder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
       </iframe>
-
-      <img
-        src="https://raw.githubusercontent.com/anishprasad-assets/valentine-assets/main/anime-couple.jpg"
-        style="width:100%;border-radius:25px;margin-top:25px;"
-      >
     `;
 
     container.appendChild(card);
